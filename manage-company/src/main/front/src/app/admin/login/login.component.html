@@ -1,1 +1,88 @@
-<p>login works!</p>
+<div class="container">
+    <div class="manage-main">
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-7" style="text-align: center">
+                <h1> MANAGE SMALL COMPANY </h1>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="manage-main-login col-md-4">
+                <form class="form-horizontal" (ngSubmit)="onLogin()" [formGroup]="loginForm">
+
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="form-group manage-form-group">
+
+                            <label for="login" class="cols-sm-2 control-label">
+                                Login
+                            </label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-users fa" aria-hidden="true">
+                                            </i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control input" name="login" id="login"
+                                        placeholder="Enter Login" formControlName="login" />
+                                </div>
+                                <div class="manage-error-block">
+                                    <span class="manage-error">
+                                        {{loginError()}}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group manage-form-group">
+                            <label for="password" class="cols-sm-2 control-label">
+                                Password
+                            </label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-lock fa" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                    <input type="password" class="form-control input" name="password" id="password"
+                                        placeholder="Enter password" formControlName="password" />
+                                </div>
+                                <div class="manage-error-block">
+                                    <span class="manage-error">
+                                        {{passwordError()}}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div *ngIf="status === SignInStatus.SigningIn">
+                            </div>
+                            <div *ngIf="status === SignInStatus.Error">
+                                <div class="alert alert-danger" role="alert" style="text-align: center">
+                                    {{error}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group manage-login-group manage-form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block manage-login-button">
+                                Login
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
