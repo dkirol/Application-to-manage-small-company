@@ -1,5 +1,5 @@
 import { RouterStateSnapshot, ActivatedRouteSnapshot, Router } from "@angular/router";
-import { AuthenticationStatus, UserAuth, AuthService } from "./auth.service";
+import { AuthenticationStatus, AccountAuth, AuthService } from "./auth.service";
 import {Injectable} from '@angular/core';
 import { Observable } from "rxjs/index";
 
@@ -13,7 +13,7 @@ export class AuthGuard {
         if (this.authService.isAuthenticated()) {
             return true;
         }
-        const auth = this.authService.userAuth.getValue();
+        const auth = this.authService.accountAuth.getValue();
 
         switch (auth.authenticationStatus) {
             case AuthenticationStatus.Authenticated:
@@ -28,9 +28,9 @@ export class AuthGuard {
 
         return new Promise(
             (resolve => {
-                this.authService.userAuth.subscribe(
-                    (userAuth: UserAuth) => {
-                        switch (userAuth.authenticationStatus) {
+                this.authService.accountAuth.subscribe(
+                    (AccountAuth: AccountAuth) => {
+                        switch (AccountAuth.authenticationStatus) {
                             case AuthenticationStatus.Authenticated:
                                 resolve(true);
                                 break;

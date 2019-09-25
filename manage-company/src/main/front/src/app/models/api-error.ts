@@ -10,9 +10,9 @@ export function tryCastAndThrowApiError(error: any) {
 export enum ApiErrorCode {
     NotAuthenticated = 100,
     Unauthorized = 110,
-    InvalidUserNameOrPassword = 115,
+    InvalidAccountNameOrPassword = 115,
     LoginFailureBlock = 117,
-    UserNotActive = 120,
+    AccountNotActive = 120,
     InvalidParameters = 200
 }
 
