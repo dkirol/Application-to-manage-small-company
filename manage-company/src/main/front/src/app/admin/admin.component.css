@@ -1,0 +1,54 @@
+.manage-custom-nav-link:hover {
+    color: #323232;
+}
+
+.manage-icon {
+    padding-right: 10px;
+}
+
+.manage-page {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.manage-header {
+    flex-shrink: 0;
+}
+
+.manage-sidenav {
+    background-color: #F4874b;
+    padding-top: 20px;
+}
+
+.manage-sidenav a {
+    color: white;
+}
+
+.manage-sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.manage-link {
+    border-left: solid 5px #F4874b;
+}
+
+.manage-link-active {
+    font-weight: bold;
+    border-left-color: white;
+}
+
+.manage-sidenav .manage-menu-group .manage-group-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding-left: 21px;
+}
+
+.manage-sidenav .manage-menu-group .manage-link {
+    padding-left: 31px;
+}

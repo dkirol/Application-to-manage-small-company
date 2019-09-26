@@ -1,4 +1,4 @@
---PROCEDURA wysylajaca przypomnienie o zaplacie
+
 CREATE OR REPLACE PROCEDURE send_notification_to_pay
 AS
 CURSOR cursor_1 IS

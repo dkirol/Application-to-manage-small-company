@@ -1,1 +1,48 @@
-<p>admin works!</p>
+<div class="manage-page">
+    <div class="manage-header">
+        
+    </div>
+        <div class="manage-sidenav-and-content">
+            <div class="manage-sidenav">
+                <div class="manage-menu-group">
+                    <a class="manage-link" routerLinkActive="manage-link-active" routerLink="/admin/accounts">
+                        <i class="fas fa-id-card manage-icon"></i>
+                        Accounts
+                    </a>
+                    <a class="manage-link" routerLinkActive="manage-link-active" routerLink="/admin/employees">
+                        <i class="fas fa-user-injured manage-icon"></i>
+                        Employees
+                    </a>
+                    <a class="manage-link" routerLinkActive="manage-link-active" routerLink="/admin/customers">
+                        <i class="fas fa-users manage-icon"></i>
+                        Customers
+                    </a>
+                    <a class="manage-link" routerLinkActive="manage-link-active" routerLink="/admin/leaves">
+                        <i class="fas fa-luggage-cart manage-icon"></i>
+                        Leaves
+                    </a>
+                    <a class="manage-link" routerLinkActive="manage-link-active" routerLink="/admin/tasks">
+                        <i class="fas fa-chalkboard-teacher manage-icon"></i>
+                        Tasks
+                    </a>
+                    <a class="manage-link" routerLinkActive="manage-link-active" routerLink="/admin/products">
+                        <i class="fas fa-shopping-bag manage-icon"></i>
+                        Products
+                    </a>
+                    <a class="manage-link" routerLinkActive="manage-link-active" routerLink="/admin/courses">
+                        <i class="fas fa-graduation-cap manage-icon"></i>
+                        Courses
+                    </a>
+                    <a class="manage-link" routerLinkActive="manage-link-active" routerLink="/admin/sales">
+                        <i class="fas fa-gift manage-icon"></i>
+                        Sales
+                    </a>
+                </div>
+            </div>
+            <div class="manage-content">
+                <div>
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+</div>

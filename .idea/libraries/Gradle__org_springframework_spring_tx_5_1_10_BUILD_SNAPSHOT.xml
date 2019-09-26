@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework:spring-tx:5.1.10.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.1.10.BUILD-SNAPSHOT/930b19d6e82cb98188e070a2829e7390a78aae80/spring-tx-5.1.10.BUILD-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.1.10.BUILD-SNAPSHOT/3da641c41e07da5d2fe83cfc982c7959e2d02860/spring-tx-5.1.10.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.1.10.BUILD-SNAPSHOT/a73f01e7526538960b24de95a17924c05663ac0f/spring-tx-5.1.10.BUILD-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
